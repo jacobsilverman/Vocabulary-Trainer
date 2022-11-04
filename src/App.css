@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: 1000px;
+}
