@@ -5,10 +5,34 @@
   text-align: center;
 }
 
-.App {
+.Guessing-Section {
   display: grid;
   justify-content: center;
-  align-items: flex-start;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: 1000px;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px;
+  
+}
+
+.Guessing-Section div {
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+}
+
+.Answer-Section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 50px);
+  margin: 50px;
+}
+
+.item {
+  border: 1px solid black;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: lightgreen;
 }
