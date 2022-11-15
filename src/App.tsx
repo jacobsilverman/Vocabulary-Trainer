@@ -83,6 +83,9 @@ function App() {
 
   return (
     <div className="App">
+      <header>
+        <h1>Vocabulary trainer</h1>
+      </header>
       <div className="Guessing-Section">
         <div>
           {randomizedWords && randomizedWords.map((word: any) => {
@@ -101,11 +104,11 @@ function App() {
       </div>
 
       <div className="Answer-Section">
-        {Object.entries(answers).map((item: any) => {
+        {Object.entries(answers).map(([key, value] : any) => {
           return (
             <>
-              <div className="item">{item[0]}</div>
-              <div className="item">{item[1]}</div>
+              <div className="item">{key}</div>
+              <div className="item">{value}</div>
             </>
           )
         })}
